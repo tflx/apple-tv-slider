@@ -1,0 +1,40 @@
+{
+  "name": "apple-tv-slider",
+  "version": "0.1.0",
+  "description": "Slider for Web Components in an AppleTV style",
+  "source": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/slider-controller.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "dev": "npm run build:watch & cd examples && npm run dev",
+    "lint": "eslint \"**/*.{js,ts}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tflx/apple-tv-slider.git"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "lit": "^3.1.0"
+  },
+  "keywords": [
+    "slider",
+    "web",
+    "components",
+    "html",
+    "javascript",
+    "carousel"
+  ],
+  "author": "Torben Larsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tflx/apple-tv-slider/issues"
+  },
+  "homepage": "https://github.com/tflx/apple-tv-slider#readme",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
