@@ -2,6 +2,7 @@ import { html, LitElement, PropertyValueMap } from 'lit'
 import { customElement, property, queryAssignedElements, state } from 'lit/decorators.js'
 import CSS from './apple-tv-slider.css';
 import classNames from 'classnames';
+import './apple-tv-slider-item';
 
 
 /**

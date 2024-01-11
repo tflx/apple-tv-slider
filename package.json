@@ -7,6 +7,7 @@
   "module": "dist/index.js",
   "types": "dist/apple-tv-slider.d.ts",
   "scripts": {
+    "start": "npm i && cd examples && npm i",
     "build": "tsc",
     "build:watch": "tsc -w",
     "dev": "npm run build:watch & cd examples && npm run dev",

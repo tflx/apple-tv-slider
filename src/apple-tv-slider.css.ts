@@ -10,30 +10,8 @@ const CSS = css`
 
 .container {
     display: grid;
-    grid-template-areas: 'all'
-}
-
-::slotted(slider-item) {
-    grid-area: all;
-    position: relative;
-    clip-path: inset(0 0 0 0);
-    transition: translate var(--slider-speed), clip-path var(--slider-speed);
-}
-
-::slotted(slider-item.before) {
-    translate: -50% 0%;
-    clip-path: inset(0 50% 0 0);       
-}
-    
-    
-::slotted(slider-item.after) {
-    translate: 50% 0%;
-    clip-path: inset(0 0 0 50%);
-}
-
-::slotted(slider-item.active) {
-    translate: 0% 0%;
-    clip-path: inset(0 0 0 0);
+    grid-template-areas: 'all';
+    height: 100%;
 }
 `;
 

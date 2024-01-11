@@ -25,7 +25,7 @@ export class MainElement extends LitElement {
       items.push(html`
         <slider-item>
           <img
-            style="width: 100%; object-fit: cover;"
+            style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
             src="https://picsum.photos/600/400?${i}"
           />
         </slider-item>
