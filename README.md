@@ -16,8 +16,36 @@ To use the `appletv-slider` component, you can add it to your HTML:
 
 ```html
 <appletv-slider speed="2000ms">
-  <slide-item>Slide 1</slide-item>
-  <slide-item>Slide 2</slide-item>
+  <slide-item>
+    <img
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+      src="https://picsum.photos/600/400?1"
+    />
+  </slide-item>
+  <slide-item>
+    <img
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+      src="https://picsum.photos/600/400?2"
+    />
+  </slide-item>
+  <slide-item>
+    <img
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+      src="https://picsum.photos/600/400?3"
+    />
+  </slide-item>
+  <slide-item>
+    <img
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+      src="https://picsum.photos/600/400?4"
+    />
+  </slide-item>
+  <slide-item>
+    <img
+      style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"
+      src="https://picsum.photos/600/400?5"
+    />
+  </slide-item>
   <!-- Add more slide items as needed -->
 </appletv-slider>
 ```
