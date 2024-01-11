@@ -7,11 +7,12 @@
   "module": "dist/index.js",
   "types": "dist/apple-tv-slider.d.ts",
   "scripts": {
-    "start": "npm i && cd examples && npm i",
     "build": "tsc",
     "build:watch": "tsc -w",
     "dev": "npm run build:watch & cd examples && npm run dev",
-    "lint": "eslint \"**/*.{js,ts}\""
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build --test"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,14 @@
   },
   "homepage": "https://github.com/tflx/apple-tv-slider#readme",
   "devDependencies": {
-    "typescript": "^5.3.3"
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/web-components": "^7.6.7",
+    "@storybook/web-components-vite": "^7.6.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.7",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
   }
 }
