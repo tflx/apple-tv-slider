@@ -1,0 +1,1 @@
+{"v":3,"stories":{"appletv-slider--default":{"id":"appletv-slider--default","name":"Default","title":"AppleTV Slider","importPath":"./src/stories/AppleTvSlider.stories.ts","tags":["story"],"kind":"AppleTV Slider","story":"Default","parameters":{"__id":"appletv-slider--default","docsOnly":false,"fileName":"./src/stories/AppleTvSlider.stories.ts"}}}}
