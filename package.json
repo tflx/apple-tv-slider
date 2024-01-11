@@ -9,10 +9,13 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc -w",
-    "dev": "npm run build:watch & cd examples && npm run dev",
-    "lint": "eslint \"**/*.{js,ts}\"",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build --test"
+    "build-storybook": "storybook build --test",
+    "dev": "npm run build:watch & npm run storybook",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "deploy": "npm run predeploy && npm run deploy-storybook"
   },
   "repository": {
     "type": "git",
@@ -35,12 +38,14 @@
   "bugs": {
     "url": "https://github.com/tflx/apple-tv-slider/issues"
   },
-  "homepage": "https://github.com/tflx/apple-tv-slider#readme",
+  "homepage": "http://tflx.github.io/apple-tv-slider/",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.7",
     "@storybook/blocks": "^7.6.7",
     "@storybook/web-components": "^7.6.7",
     "@storybook/web-components-vite": "^7.6.7",
+    "@whitespace/storybook-addon-html": "^5.1.6",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.6.7",

@@ -35,11 +35,13 @@ const renderItems = () => {
 }
 
 export const Default: StoryObj<AppleTVSlider> = {
-  args: {},
-  render: () => {
+  args: { speed: "1000ms" },
+  render: (args) => {
     return html`
       <section class="wrapper">
-        <appletv-slider speed="900ms"> ${renderItems()} </appletv-slider>
+        <appletv-slider speed="${args.speed}">
+          ${renderItems()}
+        </appletv-slider>
         <div class="buttons">
           <button
             class="button"
