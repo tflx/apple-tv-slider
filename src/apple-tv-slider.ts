@@ -32,7 +32,7 @@ export class AppleTVSlider extends LitElement {
     this.updateClasses()
   }
 
-  updateClasses = () => {
+  private updateClasses = () => {
     this.listItems.forEach((item, i) => {
       const c = classNames({
         'active': this.active === i,
