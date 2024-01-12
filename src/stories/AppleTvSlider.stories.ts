@@ -38,28 +38,25 @@ export const Default: StoryObj<AppleTVSlider> = {
   args: { speed: "1000ms" },
   render: (args) => {
     return html`
-      <section class="wrapper">
-        <appletv-slider speed="${args.speed}">
-          ${renderItems()}
-        </appletv-slider>
-        <div class="buttons">
-          <button
-            class="button"
-            @click="${() => document.querySelector("appletv-slider")?.prev()}"
-          >
-            Prev
-          </button>
-          <button
-            class="button"
-            @click="${() => document.querySelector("appletv-slider")?.next()}"
-          >
-            Next
-          </button>
-        </div>
-      </section>
+      <appletv-slider speed="${args.speed}"> ${renderItems()} </appletv-slider>
+      <div class="buttons">
+        <button
+          class="button"
+          @click="${() => document.querySelector("appletv-slider")?.prev()}"
+        >
+          Prev
+        </button>
+        <button
+          class="button"
+          @click="${() => document.querySelector("appletv-slider")?.next()}"
+        >
+          Next
+        </button>
+      </div>
       <style>
         appletv-slider {
-          height: 900px;
+          height: 75vh;
+          max-height: 700px;
         }
         .buttons {
           display: flex;
