@@ -2,12 +2,14 @@
 
 This is a custom web component that creates a slider in the style of Apple TV.
 
+[See demo here](https://tflx.github.io/apple-tv-slider/?path=/story/appletv-slider--default)
+
 ## Installation
 
 First, you need to import the component:
 
 ```typescript
-import './apple-tv-slider';
+import "./apple-tv-slider"
 ```
 
 ## Usage
