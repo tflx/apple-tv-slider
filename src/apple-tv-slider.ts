@@ -10,14 +10,11 @@ import "./apple-tv-slider-item"
 
 /**
  * Slider in the style of Apple TV
- *
  * @element appletv-slider
- * @slot The <slide-item> slides *
- * @attribute speed - The speed of the slide transition
+ * @param speed - The speed of the slide transition
+ * @slot The `<slide-item>` slides
  * @fires change - When the active slide changes
- *
  */
-
 @customElement("appletv-slider")
 export class AppleTVSlider extends LitElement {
   static styles = css`
